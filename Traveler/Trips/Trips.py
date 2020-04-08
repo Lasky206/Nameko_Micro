@@ -4,6 +4,7 @@ from nameko_redis import Redis
 
 class TripsService:
     name = 'trips_service'
+    redis = Redis('development')
 
     @rpc
     def get(self, trip_id):

@@ -15,7 +15,7 @@ services:
 
   airports:
     build:
-      context: airports
+      context: Airports
     depends_on:
       - rabbit
     environment:
@@ -28,7 +28,7 @@ services:
 
   trips:
     build:
-      context: trips
+      context: Trips
     depends_on:
       - rabbit
     environment:
@@ -41,7 +41,7 @@ services:
 
   gateway:
     build:
-      context: gateway
+      context: Gateway
     depends_on:
       - rabbit
     ports:

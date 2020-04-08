@@ -14,7 +14,7 @@ class GatewayService:
         airport = self.airports_rpc.get(airport_id)
         return json.dumps({'airport': airport})
 
-    @http('POST', '/airport'):
+    @http('POST', '/airport')
     def post_airport(self, request):
         data = json.loads(request.get_data(as_text=True))
         airport_id = self.airports_rpc.create(data['airport'])
