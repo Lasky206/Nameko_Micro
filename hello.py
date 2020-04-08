@@ -7,4 +7,4 @@ class GreetingService:
     @rpc
     def hello(self, name):
         sleep(5)
-        return "Hello, {}!".format(name)
+        return "Hello, {}! (version 2)".format(name)
