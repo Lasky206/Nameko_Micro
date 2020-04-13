@@ -22,21 +22,3 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-# def main_menu():
-#     os.system('cls' if os.name == 'nt' else 'clear')
-#     print('####################')
-#     print('#    Main Menu     #')
-#     print('####################')
-#     print()
-#     print('1) View Show Times')
-#     print('2) Pick Your Seat')
-#     print('3) Movie Info')
-#
-#     choice = input('\nPlease enter your selection: ')
-#
-#     if choice == '1':
-#         with ClusterRpcProxy(config) as cluster_rpc:
-#             name = cluster_rpc.show_time_service.get('Die Hard')
-#             print(name.result)
